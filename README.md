@@ -4,7 +4,7 @@ Swift UI with Realm MongoDB Backend
 
 Built in XCode 14 Swift 5
 
-Workout Logging Application
+###Workout Logging Application
 
 User can
   - log in with email and valid password
