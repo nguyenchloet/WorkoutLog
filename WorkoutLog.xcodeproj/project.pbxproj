@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		541A9F8529DB2C6D005AE26B /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541A9F8429DB2C6D005AE26B /* CalendarView.swift */; };
+		541A9F8929DBBAD8005AE26B /* GraphsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541A9F8829DBBAD8005AE26B /* GraphsView.swift */; };
 		544FF02E29D77FEA00541DA1 /* WorkoutLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544FF02D29D77FEA00541DA1 /* WorkoutLogApp.swift */; };
 		544FF03029D77FEA00541DA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544FF02F29D77FEA00541DA1 /* ContentView.swift */; };
 		544FF03229D77FEC00541DA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 544FF03129D77FEC00541DA1 /* Assets.xcassets */; };
 		544FF03529D77FEC00541DA1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 544FF03429D77FEC00541DA1 /* Preview Assets.xcassets */; };
+		544FF03F29D789F600541DA1 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 544FF03E29D789F600541DA1 /* Realm */; };
+		544FF04129D789F600541DA1 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 544FF04029D789F600541DA1 /* RealmSwift */; };
+		544FF04329D78C7D00541DA1 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544FF04229D78C7D00541DA1 /* Exercise.swift */; };
+		544FF04529D7BE3C00541DA1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544FF04429D7BE3C00541DA1 /* LoginView.swift */; };
+		544FF04729D7C72500541DA1 /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544FF04629D7C72500541DA1 /* NavBar.swift */; };
+		544FF04929D7C95F00541DA1 /* ExerciseInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544FF04829D7C95F00541DA1 /* ExerciseInputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		541A9F8429DB2C6D005AE26B /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		541A9F8829DBBAD8005AE26B /* GraphsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsView.swift; sourceTree = "<group>"; };
 		544FF02A29D77FEA00541DA1 /* WorkoutLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		544FF02D29D77FEA00541DA1 /* WorkoutLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogApp.swift; sourceTree = "<group>"; };
 		544FF02F29D77FEA00541DA1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		544FF03129D77FEC00541DA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		544FF03429D77FEC00541DA1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		544FF04229D78C7D00541DA1 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		544FF04429D7BE3C00541DA1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		544FF04629D7C72500541DA1 /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
+		544FF04829D7C95F00541DA1 /* ExerciseInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				544FF04129D789F600541DA1 /* RealmSwift in Frameworks */,
+				544FF03F29D789F600541DA1 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +67,9 @@
 		544FF02C29D77FEA00541DA1 /* WorkoutLog */ = {
 			isa = PBXGroup;
 			children = (
+				544FF03C29D7889900541DA1 /* Model */,
+				544FF03B29D7889400541DA1 /* Views */,
 				544FF02D29D77FEA00541DA1 /* WorkoutLogApp.swift */,
-				544FF02F29D77FEA00541DA1 /* ContentView.swift */,
 				544FF03129D77FEC00541DA1 /* Assets.xcassets */,
 				544FF03329D77FEC00541DA1 /* Preview Content */,
 			);
@@ -65,6 +82,27 @@
 				544FF03429D77FEC00541DA1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		544FF03B29D7889400541DA1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				544FF04429D7BE3C00541DA1 /* LoginView.swift */,
+				544FF02F29D77FEA00541DA1 /* ContentView.swift */,
+				544FF04629D7C72500541DA1 /* NavBar.swift */,
+				541A9F8429DB2C6D005AE26B /* CalendarView.swift */,
+				544FF04829D7C95F00541DA1 /* ExerciseInputView.swift */,
+				541A9F8829DBBAD8005AE26B /* GraphsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		544FF03C29D7889900541DA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				544FF04229D78C7D00541DA1 /* Exercise.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +121,10 @@
 			dependencies = (
 			);
 			name = WorkoutLog;
+			packageProductDependencies = (
+				544FF03E29D789F600541DA1 /* Realm */,
+				544FF04029D789F600541DA1 /* RealmSwift */,
+			);
 			productName = WorkoutLog;
 			productReference = 544FF02A29D77FEA00541DA1 /* WorkoutLog.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +153,9 @@
 				Base,
 			);
 			mainGroup = 544FF02129D77FEA00541DA1;
+			packageReferences = (
+				544FF03D29D789F600541DA1 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 544FF02B29D77FEA00541DA1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +183,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				544FF03029D77FEA00541DA1 /* ContentView.swift in Sources */,
+				541A9F8529DB2C6D005AE26B /* CalendarView.swift in Sources */,
+				544FF04729D7C72500541DA1 /* NavBar.swift in Sources */,
+				541A9F8929DBBAD8005AE26B /* GraphsView.swift in Sources */,
+				544FF04929D7C95F00541DA1 /* ExerciseInputView.swift in Sources */,
 				544FF02E29D77FEA00541DA1 /* WorkoutLogApp.swift in Sources */,
+				544FF04529D7BE3C00541DA1 /* LoginView.swift in Sources */,
+				544FF04329D78C7D00541DA1 /* Exercise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +390,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		544FF03D29D789F600541DA1 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		544FF03E29D789F600541DA1 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 544FF03D29D789F600541DA1 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		544FF04029D789F600541DA1 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 544FF03D29D789F600541DA1 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 544FF02229D77FEA00541DA1 /* Project object */;
 }

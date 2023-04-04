@@ -6,9 +6,12 @@
 //
 
 import SwiftUI
+import RealmSwift
+
+let app = RealmSwift.App(id: "workoutlog-fwolt")
 
 @main
-struct WorkoutLogApp: App {
+struct WorkoutLogApp: SwiftUI.App {
     var body: some Scene {
         WindowGroup {
             ContentView()
